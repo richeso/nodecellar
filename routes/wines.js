@@ -23,8 +23,7 @@ db.open(function(err, db) {
         });
     }
 });
-
-
+	
 exports.findById = function(req, res) {
     var id = req.params.id;
     var obj_id = BSON.ObjectID.createFromHexString(req.params.id);
